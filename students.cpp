@@ -29,31 +29,21 @@ void cleanUpStudents()
 }
 
 //Add a student starting with 0 credits.  Return position where inserted.
-int addStudent (std::string studentName)
+int addStudent (std::string studentsName)
 {
-    cout << "Numstudents = " << numStudents << endl;
-
-  students[numStudents].name = studentName;
-
-  students[numStudents].credits = 0;
-  ++numStudents;
+    int whereInserted = addInOrder (studentNames, numStudents, studentsName);
+    --numStudents;
+    addElement (studentCredits, numStudents, whereInserted, 0);
+    return whereInserted;
 
 }
 //Add a number of credits taken by a student
 int addCredits (std::string studentName, int credits)
 {
-
-   int loc = seqSearch(studentNames, numStudents, studentName);
-
-   if (loc == -1 )
-   {
-       addStudent(studentName);
-       addInOrder(studentNames, numStudents, studentName);
-       students[1 - numStudents].credits += credits;
-   }
-   else
-   {
-       students[loc].credits += credits;
-   }
-
+    int pos = binarySearch (studentNames, numStudents, studentName);
+    if (pos < 0)
+    {
+        pos = addStudent (studentName);
+    }
+    studentCredits[pos] += credits;
 }

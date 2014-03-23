@@ -12,6 +12,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="courses0.dat enrollments0.dat output.csv" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -33,7 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="arrayUtils.h" />
+		<Unit filename="courses.cpp" />
+		<Unit filename="courses.h" />
+		<Unit filename="courses0.dat" />
+		<Unit filename="courses1.dat" />
+		<Unit filename="courses2.dat" />
+		<Unit filename="enrollments0.dat" />
+		<Unit filename="enrollments1.dat" />
+		<Unit filename="enrollments2.dat" />
+		<Unit filename="registration.cpp" />
+		<Unit filename="students.cpp" />
+		<Unit filename="students.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
