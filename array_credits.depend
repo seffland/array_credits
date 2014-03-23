@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1395598203 source:c:\users\seffl_000\skydrive\documents\array_credits\courses.cpp
+	"arrayUtils.h"
+	"courses.h"
+
+1395598202 c:\users\seffl_000\skydrive\documents\array_credits\arrayutils.h
+
+1395598203 c:\users\seffl_000\skydrive\documents\array_credits\courses.h
+	<iostream>
+	<string>
+
+1395599852 source:c:\users\seffl_000\skydrive\documents\array_credits\registration.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	<fstream>
+	"courses.h"
+	"students.h"
+
+1395598207 c:\users\seffl_000\skydrive\documents\array_credits\students.h
+	<string>
+
+1395600204 source:c:\users\seffl_000\skydrive\documents\array_credits\students.cpp
+	"students.h"
+	"arrayUtils.h"
+	<cstdlib>
+	<iostream>
+	<string>
+	<fstream>
+
