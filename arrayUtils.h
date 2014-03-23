@@ -6,7 +6,7 @@
 //  Add to the end
 //  - Assumes that we have a separate integer (size) indicating how
 //     many elements are in the array
-//  - and that the "true" size of the array is at least one larger 
+//  - and that the "true" size of the array is at least one larger
 //      than the current value of that counter
 template <typename T>
 void addToEnd (T* array, int& size, T value)
@@ -21,7 +21,7 @@ void addToEnd (T* array, int& size, T value)
 //    index..size-1 up one, to make room.
 //  - Assumes that we have a separate integer (size) indicating how
 //     many elements are in the array
-//  - and that the "true" size of the array is at least one larger 
+//  - and that the "true" size of the array is at least one larger
 //      than the current value of that counter
 
 template <typename T>
@@ -45,8 +45,9 @@ void addElement (T* array, int& size, int index, T value)
 // Return the position where it was inserted
 //  - Assumes that we have a separate integer (size) indicating how
 //     many elements are in the array
-//  - and that the "true" size of the array is at least one larger 
+//  - and that the "true" size of the array is at least one larger
 //      than the current value of that counter
+
 
 template <typename T>
 int addInOrder (T* array, int& size, T value)
@@ -64,7 +65,7 @@ int addInOrder (T* array, int& size, T value)
 }
 
 
-// Search an array for a given value, returning the index where 
+// Search an array for a given value, returning the index where
 //    found or -1 if not found.
 template <typename T>
 int seqSearch(const T list[], int listLength, T searchItem)
@@ -79,7 +80,7 @@ int seqSearch(const T list[], int listLength, T searchItem)
 }
 
 
-// Search an ordered array for a given value, returning the index where 
+// Search an ordered array for a given value, returning the index where
 //    found or -1 if not found.
 template <typename T>
 int seqOrderedSearch(const T list[], int listLength, T searchItem)
@@ -112,7 +113,7 @@ void removeElement (T* array, int& size, int index)
 
 
 
-// Search an ordered array for a given value, returning the index where 
+// Search an ordered array for a given value, returning the index where
 //    found or -1 if not found.
 template <typename T>
 int binarySearch(const T list[], int listLength, T searchItem)
@@ -129,14 +130,14 @@ int binarySearch(const T list[], int listLength, T searchItem)
 
         if (list[mid] == searchItem)
             found = true;
-        else 
+        else
             if (searchItem < list[mid])
                 last = mid - 1;
             else
                 first = mid + 1;
     }
 
-    if (found) 
+    if (found)
         return mid;
     else
         return -1;
